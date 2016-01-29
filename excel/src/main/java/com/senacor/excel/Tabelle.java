@@ -33,9 +33,8 @@ public class Tabelle
     		}
     		
      		
-     		System.out.println("Geben Sie den Pfad an, in sich Ihre Excel Datei befindet:");
     		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-     		 String path_excel =in.readLine();
+     		 String path_excel = args[0];
     	     
     	     if(!existiert_File(path_excel)) {
     	    	 return;
