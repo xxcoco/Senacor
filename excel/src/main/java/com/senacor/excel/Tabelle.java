@@ -25,17 +25,25 @@ public class Tabelle
 {
     public static void main( String[] args )
     {
-    /* hallo ihr süßen*/
+    
      	try {
-    		
-     		System.out.println("Geben Sie den Pfad an, in sich Ihre Excel Datei befindet:");
-    		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-     		 String path_excel =in.readLine();
-    	     
+     		if(args.length != 2){
+    			throw new IllegalArgumentException("Brauche genau zwei Dateien!");
+    		}
+     		
+    		 String path_excel = args[0];
     	     if(!existiert_File(path_excel)) {
     	    	 return;
     	     }
+    	     
+    	     String path_stunden = args[1];
+    	     if(!existiert_File(path_stunden)) {
+    	    	 return;
+    	     }
+    	        
     	  
+    	     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+     		 
     	     System.out.println("Geben Sie Ihren Namen ein:");
     	     String textName = in.readLine();
     	     
@@ -60,13 +68,7 @@ public class Tabelle
         	     }
     	     }
     	    
-    	     
-    	     System.out.println("Geben Sie den Pfad an, in dem sich Ihre Arbeitsstunden Textdatei befindet:");
-    	     String path_stunden = in.readLine();
-    	     if(!existiert_File(path_stunden)) {
-    	    	 return;
-    	     }
-    	        
+    	  
     	     System.out.println("Möchten Sie die Stunden ausgezahlt bekommen? (J/N");
     	     String auszahlung = in.readLine();
     	     auszahlung = getKreuz(auszahlung);
