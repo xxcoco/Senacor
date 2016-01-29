@@ -25,7 +25,7 @@ public class Tabelle
 {
     public static void main( String[] args )
     {
-    
+    /* hallo ihr süßen*/
      	try {
     		
      		System.out.println("Geben Sie den Pfad an, in dem sich Ihre Excel Datei befindet:");
