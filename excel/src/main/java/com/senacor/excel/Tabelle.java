@@ -28,7 +28,7 @@ public class Tabelle
     /* hallo ihr süßen*/
      	try {
     		
-     		System.out.println("Geben Sie den Pfad an, in dem sich Ihre Excel Datei befindet:");
+     		System.out.println("Geben Sie den Pfad an, in sich Ihre Excel Datei befindet:");
     		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
      		 String path_excel =in.readLine();
     	     
