@@ -28,6 +28,11 @@ public class Tabelle
     /* hallo ihr süßen*/
      	try {
     		
+     		if(args.length != 2){
+    			throw new IllegalArgumentException("Brauche genau zwei Dateien!");
+    		}
+    		
+     		
      		System.out.println("Geben Sie den Pfad an, in sich Ihre Excel Datei befindet:");
     		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
      		 String path_excel =in.readLine();
