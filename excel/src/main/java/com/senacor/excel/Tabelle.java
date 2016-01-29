@@ -25,7 +25,6 @@ public class Tabelle
 {
     public static void main( String[] args )
     {
-    /* hallo ihr süßen*/
      	try {
     		
      		if(args.length != 2){
